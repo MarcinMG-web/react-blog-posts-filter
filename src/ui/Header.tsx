@@ -1,8 +1,13 @@
-import { Box, Typography } from '@mui/joy';
+import { Box, Typography, Skeleton } from '@mui/joy';
 import ColorSchemeToggle from '../components/ColorSchemeToggle';
 import AuthorFilter from '../components/AuthorFilter';
+import { useAppState } from '../context/AppState';
 
 export default function Header(): JSX.Element {
+  const {
+    state: { loading },
+  } = useAppState();
+
   return (
     <Box
       component='header'
@@ -12,12 +17,12 @@ export default function Header(): JSX.Element {
         justifyContent: 'space-between',
       }}
     >
-      <ColorSchemeToggle />
-      <Typography level='title-lg' sx={{ gap: 2, display: 'flex', alignItems: 'center' }}>
-        Blog Post App
-      </Typography>
+      {loading ? <Skeleton variant='rectangular' width={100} height={40} /> : <ColorSchemeToggle />}
 
-      <AuthorFilter />
+      <Typography level='h1' sx={{ gap: 2, display: 'flex', alignItems: 'center' }}>
+        {loading ? <Skeleton variant='text' width={200} /> : 'Blog Post App'}
+      </Typography>
+      {loading ? <Skeleton variant='rectangular' width={150} height={40} /> : <AuthorFilter />}
     </Box>
   );
 }

@@ -19,7 +19,6 @@ export default function MainApp(): JSX.Element {
 
   if (!postsLoading || !authorsLoading) {
     dispatch({ type: 'SET_LOADING', payload: false });
-    // return <div>Loading...</div>;
   }
 
   if (postsError || authorsError) {
@@ -30,7 +29,6 @@ export default function MainApp(): JSX.Element {
     <div>
       <CssBaseline />
       <Header />
-      {/* <AuthorFilter /> */}
       <PostList filteredPosts={filteredPosts} />
     </div>
   );
