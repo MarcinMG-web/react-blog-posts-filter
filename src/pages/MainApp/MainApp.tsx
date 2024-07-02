@@ -10,8 +10,8 @@ export default function MainApp(): JSX.Element {
     state: { selectedAuthor },
   } = useAppState();
 
-  const { posts, loading: postsLoading, error: postsError } = usePosts();
-  const { loading: authorsLoading, error: authorsError } = useAuthors();
+  const { posts, postsLoading, postsError } = usePosts();
+  const { authorsLoading, authorsError } = useAuthors();
 
   const filteredPosts: Post[] = selectedAuthor ? posts.filter((post) => post.userId === selectedAuthor) : posts;
 
@@ -26,7 +26,7 @@ export default function MainApp(): JSX.Element {
   return (
     <div>
       <AuthorFilter />
-      <PostList posts={filteredPosts} />
+      <PostList filteredPosts={filteredPosts} />
     </div>
   );
 }

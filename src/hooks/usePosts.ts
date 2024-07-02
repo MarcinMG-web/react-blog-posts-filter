@@ -4,8 +4,8 @@ import { Post } from '../types/interface';
 
 export default function usePosts() {
   const [posts, setPosts] = useState<Post[]>([]);
-  const [loading, setLoading] = useState<boolean>(true);
-  const [error, setError] = useState<string | null>(null);
+  const [postsLoading, setPostsLoading] = useState<boolean>(true);
+  const [postsError, setPostsError] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchPosts = async () => {
@@ -13,14 +13,14 @@ export default function usePosts() {
         const { data } = await fetchRequestPosts();
         setPosts(data);
       } catch (errors) {
-        setError('Failed to fetch posts');
+        setPostsError('Failed to fetch posts');
       } finally {
-        setLoading(false);
+        setPostsLoading(false);
       }
     };
 
     fetchPosts();
   }, []);
 
-  return { posts, loading, error };
+  return { posts, postsLoading, postsError };
 }

@@ -1,13 +1,13 @@
 import { Post } from '../types/interface';
 
 interface PostListProps {
-  posts: Post[];
+  filteredPosts: Post[];
 }
 
-export default function PostList({ posts }: PostListProps) {
+export default function PostList({ filteredPosts }: PostListProps) {
   return (
     <ul>
-      {posts.map(({ id, title, body }) => (
+      {filteredPosts.map(({ id, title, body }) => (
         <li key={id}>
           <h2>{title}</h2>
           <p>{body}</p>

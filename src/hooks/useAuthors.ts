@@ -4,8 +4,8 @@ import { Author } from '../types/interface';
 
 export default function useAuthors() {
   const [authors, setAuthors] = useState<Author[]>([]);
-  const [loading, setLoading] = useState<boolean>(true);
-  const [error, setError] = useState<string | null>(null);
+  const [authorsLoading, setAuthorsLoading] = useState<boolean>(true);
+  const [authorsError, setAuthorsError] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchAuthors = async () => {
@@ -13,14 +13,14 @@ export default function useAuthors() {
         const { data } = await fetchRequestAuthors();
         setAuthors(data);
       } catch (errors) {
-        setError('Failed to fetch authors');
+        setAuthorsError('Failed to fetch authors');
       } finally {
-        setLoading(false);
+        setAuthorsLoading(false);
       }
     };
 
     fetchAuthors();
   }, []);
 
-  return { authors, loading, error };
+  return { authors, authorsLoading, authorsError };
 }
