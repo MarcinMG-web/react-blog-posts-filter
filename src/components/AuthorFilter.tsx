@@ -1,13 +1,16 @@
-import { Author } from '../types/interface';
+import { ChangeEvent } from 'react';
+import { useAppState } from '../context/AppState';
+import useAuthors from '../hooks/useAuthors';
 
-interface AuthorFilterProps {
-  authors: Author[];
-  onFilterChange: (authorId: number) => void;
-}
+export default function AuthorFilter() {
+  const { authors } = useAuthors();
+  const { dispatch } = useAppState();
 
-export default function AuthorFilter({ authors, onFilterChange }: AuthorFilterProps) {
+  const handleOnChange = (e: ChangeEvent<HTMLSelectElement>) =>
+    dispatch({ type: 'SET_SELECTED_AUTHOR', payload: Number(e.target.value) });
+
   return (
-    <select onChange={(e) => onFilterChange(Number(e.target.value))}>
+    <select onChange={(e) => handleOnChange(e)}>
       <option value=''>All Authors</option>
       {authors.map((author) => (
         <option key={author.id} value={author.id}>
