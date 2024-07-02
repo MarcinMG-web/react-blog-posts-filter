@@ -27,31 +27,7 @@
 }
 
 #root {
+  max-width: 1340px;
   margin: 0 auto;
   padding: 0.5rem;
-}
-
-body {
-  margin: 0;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-body {
-  font-family: Arial, sans-serif;
-}
-
-select {
-  margin-bottom: 20px;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin-bottom: 10px;
 }

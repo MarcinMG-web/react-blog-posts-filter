@@ -1,22 +1,26 @@
-import { ChangeEvent } from 'react';
 import { useAppState } from '../context/AppState';
 import useAuthors from '../hooks/useAuthors';
+import Select from '@mui/joy/Select';
+import Option from '@mui/joy/Option';
 
-export default function AuthorFilter() {
+export default function AuthorFilter(): JSX.Element {
   const { authors } = useAuthors();
   const { dispatch } = useAppState();
 
-  const handleOnChange = (e: ChangeEvent<HTMLSelectElement>) =>
-    dispatch({ type: 'SET_SELECTED_AUTHOR', payload: Number(e.target.value) });
+  const handleOnChange = (_, value: number | string) => dispatch({ type: 'SET_SELECTED_AUTHOR', payload: value });
 
   return (
-    <select onChange={(e) => handleOnChange(e)}>
-      <option value=''>All Authors</option>
-      {authors.map((author) => (
-        <option key={author.id} value={author.id}>
-          {author.name}
-        </option>
+    <Select
+      onChange={(_, value) => handleOnChange(_, value as number | string)}
+      placeholder='All Authors'
+      defaultValue=''
+    >
+      <Option value=''>All Authors</Option>
+      {authors.map(({ id, name }) => (
+        <Option key={id} value={id}>
+          {name}
+        </Option>
       ))}
-    </select>
+    </Select>
   );
 }

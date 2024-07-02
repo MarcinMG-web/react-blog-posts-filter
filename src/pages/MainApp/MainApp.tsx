@@ -1,13 +1,15 @@
-import AuthorFilter from '../../components/AuthorFilter';
 import PostList from '../../components/PostList';
 import useAuthors from '../../hooks/useAuthors';
 import usePosts from '../../hooks/usePosts';
 import { Post } from '../../types/interface';
 import { useAppState } from '../../context/AppState';
+import Header from '../../ui/Header';
+import CssBaseline from '@mui/joy/CssBaseline';
 
 export default function MainApp(): JSX.Element {
   const {
     state: { selectedAuthor },
+    dispatch,
   } = useAppState();
 
   const { posts, postsLoading, postsError } = usePosts();
@@ -15,8 +17,9 @@ export default function MainApp(): JSX.Element {
 
   const filteredPosts: Post[] = selectedAuthor ? posts.filter((post) => post.userId === selectedAuthor) : posts;
 
-  if (postsLoading || authorsLoading) {
-    return <div>Loading...</div>;
+  if (!postsLoading || !authorsLoading) {
+    dispatch({ type: 'SET_LOADING', payload: false });
+    // return <div>Loading...</div>;
   }
 
   if (postsError || authorsError) {
@@ -25,7 +28,9 @@ export default function MainApp(): JSX.Element {
 
   return (
     <div>
-      <AuthorFilter />
+      <CssBaseline />
+      <Header />
+      {/* <AuthorFilter /> */}
       <PostList filteredPosts={filteredPosts} />
     </div>
   );
