@@ -17,7 +17,9 @@ export default function Header(): JSX.Element {
         justifyContent: 'space-between',
       }}
     >
-      {loading ? <Skeleton variant='rectangular' width={100} height={40} /> : <ColorSchemeToggle />}
+      <Skeleton variant='rectangular' width={100} height={40} loading={loading}>
+        <ColorSchemeToggle />
+      </Skeleton>
 
       <Typography
         level='h1'
@@ -42,9 +44,14 @@ export default function Header(): JSX.Element {
           animation: 'neon 1.5s infinite alternate',
         }}
       >
-        {loading ? <Skeleton variant='text' width={200} /> : 'Blog Post App'}
+        <Skeleton variant='rectangular' width={150} height={40} loading={loading}>
+          Blog Post App
+        </Skeleton>
       </Typography>
-      {loading ? <Skeleton variant='rectangular' width={150} height={40} /> : <AuthorFilter />}
+
+      <Skeleton variant='rectangular' width={150} height={40} loading={loading}>
+        <AuthorFilter />
+      </Skeleton>
     </Box>
   );
 }
