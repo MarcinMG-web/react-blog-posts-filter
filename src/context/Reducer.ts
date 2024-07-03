@@ -11,6 +11,12 @@ export const appReducer = (state: State, action: Action): State => {
         loading: action.payload,
       };
 
+    case 'SET_SELECTED_AUTHOR':
+      return {
+        ...state,
+        selectedAuthor: action.payload,
+      };
+
     default: {
       throw new Error(`Unhandled action type: ${action.type}`);
     }

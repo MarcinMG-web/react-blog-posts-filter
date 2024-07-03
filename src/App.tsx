@@ -2,6 +2,8 @@ import { Routes, Route } from 'react-router-dom';
 import RoutesEnum from './types/routesEnum';
 import MainApp from './pages/MainApp';
 import ErrorsPages from './pages/ErrorsPages';
+import { CssVarsProvider } from '@mui/joy';
+import { theme } from './theme';
 
 export default function App(): JSX.Element {
   const routes = [
@@ -17,11 +19,13 @@ export default function App(): JSX.Element {
 
   return (
     <>
-      <Routes>
-        {routes.map(({ path, component }) => (
-          <Route path={path} element={component} key={path} />
-        ))}
-      </Routes>
+      <CssVarsProvider theme={theme} defaultMode='dark' disableTransitionOnChange>
+        <Routes>
+          {routes.map(({ path, component }) => (
+            <Route path={path} element={component} key={path} />
+          ))}
+        </Routes>
+      </CssVarsProvider>
     </>
   );
 }

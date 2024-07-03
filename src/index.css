@@ -27,12 +27,7 @@
 }
 
 #root {
+  max-width: 1340px;
   margin: 0 auto;
   padding: 0.5rem;
-}
-
-body {
-  margin: 0;
-  min-width: 320px;
-  min-height: 100vh;
 }
