@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Post } from '../types/interface';
-import { Stack, Box, Typography, Skeleton, Card, Button } from '@mui/joy'; // Assuming you have MUI v5 imports
+import { Stack, Box, Typography, Skeleton, Card, Button } from '@mui/joy';
 import useAuthors from '../hooks/useAuthors';
 import { useAppState } from '../context/AppState';
 
