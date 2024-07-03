@@ -1,5 +1,5 @@
 import { Box, Typography, Skeleton } from '@mui/joy';
-import ColorSchemeToggle from '../components/ColorSchemeToggle';
+import ColorSchemeToggle from './ColorSchemeToggle';
 import AuthorFilter from '../components/AuthorFilter';
 import { useAppState } from '../context/AppState';
 
