@@ -56,16 +56,16 @@ export default function PostList({ filteredPosts }: PostListProps) {
         {currentPosts.map(({ id, title, body, author }) => (
           <Box key={id}>
             <Card variant='outlined'>
-              <Typography level='h1'>
-                <Skeleton loading={loading}> {author}</Skeleton>
-              </Typography>
-
               <Typography level='h2' fontSize='xl' sx={{ mb: 0.5 }}>
                 <Skeleton loading={loading}> {title}</Skeleton>
               </Typography>
 
               <Typography>
                 <Skeleton loading={loading}>{body}</Skeleton>
+              </Typography>
+
+              <Typography level='body-xs'>
+                <Skeleton loading={loading}> {author}</Skeleton>
               </Typography>
             </Card>
           </Box>
