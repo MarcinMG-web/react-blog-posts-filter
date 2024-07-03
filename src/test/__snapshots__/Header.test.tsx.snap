@@ -1,0 +1,78 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Header > should render correctly 1`] = `
+<DocumentFragment>
+  <header
+    class="MuiBox-root css-63c3mb"
+  >
+    <span
+      class="MuiSkeleton-root MuiSkeleton-variantRectangular MuiSkeleton-levelInherit css-119fpal-JoySkeleton-root"
+    >
+      <button
+        aria-label="toggle light/dark mode"
+        class="MuiIconButton-root MuiIconButton-variantOutlined MuiIconButton-colorNeutral MuiIconButton-sizeSm css-qjtqj1-JoyIconButton-root"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeXl2 css-1u766qj-MuiSvgIcon-root"
+          data-testid="DarkModeRoundedIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M11.01 3.05C6.51 3.54 3 7.36 3 12c0 4.97 4.03 9 9 9 4.63 0 8.45-3.5 8.95-8 .09-.79-.78-1.42-1.54-.95-.84.54-1.84.85-2.91.85-2.98 0-5.4-2.42-5.4-5.4 0-1.06.31-2.06.84-2.89.45-.67-.04-1.63-.93-1.56"
+          />
+        </svg>
+      </button>
+    </span>
+    <h1
+      class="MuiTypography-root MuiTypography-h1 css-10rp5z9-JoyTypography-root"
+    >
+      <span
+        class="MuiSkeleton-root MuiSkeleton-variantRectangular MuiSkeleton-levelInherit css-1fcz5uo-JoySkeleton-root"
+      >
+        Blog Post App
+      </span>
+    </h1>
+    <span
+      class="MuiSkeleton-root MuiSkeleton-variantRectangular MuiSkeleton-levelInherit css-1fcz5uo-JoySkeleton-root"
+    >
+      <div
+        class="MuiSelect-root MuiSelect-variantOutlined MuiSelect-colorNeutral MuiSelect-sizeMd css-134u8hc-JoySelect-root"
+      >
+        <button
+          aria-controls=":r0:"
+          aria-expanded="false"
+          class="MuiSelect-button css-1hr8yhh-JoySelect-button"
+          role="combobox"
+          type="button"
+        >
+          All Authors
+        </button>
+        <span
+          class="MuiSelect-indicator css-yq7y2p-JoySelect-indicator"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-sizeMd css-9ao4d-JoySvgIcon-root"
+            data-testid="UnfoldIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="m12 5.83 2.46 2.46c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L12.7 3.7a.9959.9959 0 0 0-1.41 0L8.12 6.88c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 5.83zm0 12.34-2.46-2.46a.9959.9959 0 0 0-1.41 0c-.39.39-.39 1.02 0 1.41l3.17 3.18c.39.39 1.02.39 1.41 0l3.17-3.17c.39-.39.39-1.02 0-1.41a.9959.9959 0 0 0-1.41 0L12 18.17z"
+            />
+          </svg>
+        </span>
+        <input
+          aria-hidden="true"
+          style="border: 0px; height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; white-space: nowrap; width: 1px;"
+          tabindex="-1"
+          value=""
+        />
+      </div>
+    </span>
+  </header>
+</DocumentFragment>
+`;
