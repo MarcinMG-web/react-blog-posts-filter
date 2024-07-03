@@ -73,12 +73,16 @@ export default function PostList({ filteredPosts }: PostListProps) {
       </Stack>
 
       <Box sx={{ display: 'flex', justifyContent: 'space-between', mt: 2 }}>
-        <Button onClick={handlePreviousPage} disabled={disabledPreviousPage}>
-          Previous
-        </Button>
-        <Button onClick={handleNextPage} disabled={disabledNextPage}>
-          Next
-        </Button>
+        <Skeleton variant='rectangular' width={100} height={36} loading={loading}>
+          <Button onClick={handlePreviousPage} disabled={disabledPreviousPage}>
+            Previous
+          </Button>
+        </Skeleton>
+        <Skeleton variant='rectangular' width={100} height={36} loading={loading}>
+          <Button onClick={handleNextPage} disabled={disabledNextPage}>
+            Next
+          </Button>
+        </Skeleton>
       </Box>
     </>
   );
