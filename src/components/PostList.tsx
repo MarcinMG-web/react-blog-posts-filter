@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Post } from '../types/interface';
-import { Stack, Box, Typography, Skeleton, Card, Button } from '@mui/joy';
+import { Stack, Box, Typography, Skeleton, Card, Button } from '@mui/joy'; // Assuming you have MUI v5 imports
 import useAuthors from '../hooks/useAuthors';
 import { useAppState } from '../context/AppState';
 
@@ -73,12 +73,16 @@ export default function PostList({ filteredPosts }: PostListProps) {
       </Stack>
 
       <Box sx={{ display: 'flex', justifyContent: 'space-between', mt: 2 }}>
-        <Button onClick={handlePreviousPage} disabled={disabledPreviousPage}>
-          Previous
-        </Button>
-        <Button onClick={handleNextPage} disabled={disabledNextPage}>
-          Next
-        </Button>
+        <Skeleton variant='rectangular' width={100} height={36} loading={loading}>
+          <Button onClick={handlePreviousPage} disabled={disabledPreviousPage}>
+            Previous
+          </Button>
+        </Skeleton>
+        <Skeleton variant='rectangular' width={100} height={36} loading={loading}>
+          <Button onClick={handleNextPage} disabled={disabledNextPage}>
+            Next
+          </Button>
+        </Skeleton>
       </Box>
     </>
   );
