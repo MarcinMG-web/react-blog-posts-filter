@@ -10,3 +10,12 @@ Requirements
 -All data is fetched from the JSONPlaceholder API
 -Custom hooks are used
 -Automated tests are created to test the application
+
+Getting Started if you want to check. Download project on yours PC. Open the terminal and install packages:
+
+    1. Open project file
+    2. npm install
+    3. npm run dev <- open project
+    4. npm run test <- check the test
+
+React application using: Vite, Vitest, React, TypeScript, Javascript, Axios, React-Router.
