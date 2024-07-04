@@ -6,6 +6,21 @@ exports[`MainApp pages > should render correctly 1`] = `
     <header
       class="MuiBox-root css-63c3mb"
     >
+      <style>
+        
+    @keyframes neon {
+      0% {
+        text-shadow: 0 0 8px #FF8C00, 0 0 16px #FF8C00, 0 0 24px #FF8C00, 0 0 32px #FF8C00, 0 0 40px #FF8C00, 0 0 48px #FF8C00, 0 0 56px #FF8C00;
+      }
+      50% {
+        text-shadow: 0 0 20px #FF8C00, 0 0 40px #FF8C00, 0 0 60px #FF8C00, 0 0 80px #FF8C00, 0 0 100px #FF8C00, 0 0 120px #FF8C00, 0 0 140px #FF8C00;
+      }
+      100% {
+        text-shadow: 0 0 8px #FF8C00, 0 0 16px #FF8C00, 0 0 24px #FF8C00, 0 0 32px #FF8C00, 0 0 40px #FF8C00, 0 0 48px #FF8C00, 0 0 56px #FF8C00;
+      }
+    }
+  
+      </style>
       <span
         class="MuiSkeleton-root MuiSkeleton-variantRectangular MuiSkeleton-levelInherit css-119fpal-JoySkeleton-root"
       >
@@ -28,10 +43,10 @@ exports[`MainApp pages > should render correctly 1`] = `
         </button>
       </span>
       <h1
-        class="MuiTypography-root MuiTypography-h1 css-10rp5z9-JoyTypography-root"
+        class="MuiTypography-root MuiTypography-h1 css-7xu0ce-JoyTypography-root"
       >
         <span
-          class="MuiSkeleton-root MuiSkeleton-variantRectangular MuiSkeleton-levelInherit css-1fcz5uo-JoySkeleton-root"
+          class="MuiSkeleton-root MuiSkeleton-variantRectangular MuiSkeleton-levelInherit css-83tubq-JoySkeleton-root"
         >
           Blog Post App
         </span>
