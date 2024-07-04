@@ -47,7 +47,7 @@ exports[`Header ui > should render correctly 1`] = `
       <span
         class="MuiSkeleton-root MuiSkeleton-variantRectangular MuiSkeleton-levelInherit css-83tubq-JoySkeleton-root"
       >
-        Blog  App
+        Blog App
       </span>
     </h1>
     <span
