@@ -43,12 +43,12 @@ exports[`MainApp pages > should render correctly 1`] = `
         </button>
       </span>
       <h1
-        class="MuiTypography-root MuiTypography-h1 css-7xu0ce-JoyTypography-root"
+        class="MuiTypography-root MuiTypography-h1 css-o5p301-JoyTypography-root"
       >
         <span
           class="MuiSkeleton-root MuiSkeleton-variantRectangular MuiSkeleton-levelInherit css-83tubq-JoySkeleton-root"
         >
-          Blog Post App
+          Blog  App
         </span>
       </h1>
       <span

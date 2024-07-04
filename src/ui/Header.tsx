@@ -34,12 +34,12 @@ export default function Header(): JSX.Element {
           alignItems: 'center',
           animation: 'neon 1.5s infinite alternate',
           color: theme.palette.mode === 'light' ? '#FFFFFF' : theme.palette.mode === 'dark' ? '#FFFFFF' : '#000000',
-          fontSize: '2.5rem',
+          fontSize: '2rem',
           fontWeight: 'bold',
         }}
       >
         <Skeleton variant='rectangular' width={250} height={40} loading={loading}>
-          Blog Post App
+          Blog App
         </Skeleton>
       </Typography>
 
