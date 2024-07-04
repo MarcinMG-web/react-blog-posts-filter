@@ -8,7 +8,7 @@ vi.mock('../api/requests', () => ({
   fetchRequestPosts: vi.fn(),
 }));
 
-describe('usePosts', () => {
+describe('usePosts hooks', () => {
   it('should fetch posts successfully', async () => {
     const mockPosts: Post[] = [
       { id: 1, userId: 1, title: 'Post 1', body: 'Body 1' },

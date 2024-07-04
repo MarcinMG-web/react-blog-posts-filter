@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`AuthorFilter > should render correctly 1`] = `
+exports[`AuthorFilter component > should render correctly 1`] = `
 <DocumentFragment>
   <div
     class="MuiSelect-root MuiSelect-variantOutlined MuiSelect-colorNeutral MuiSelect-sizeMd css-134u8hc-JoySelect-root"

@@ -8,8 +8,8 @@ vi.mock('../api/requests', () => ({
   fetchRequestAuthors: vi.fn(),
 }));
 
-describe('useAuthors', () => {
-  it('should fetch Authors successfully', async () => {
+describe('useAuthors hooks', () => {
+  it('should fetch authors successfully', async () => {
     const mockAuthors: Author[] = [
       { id: 1, name: 'Jon' },
       { id: 2, name: 'Rambo' },

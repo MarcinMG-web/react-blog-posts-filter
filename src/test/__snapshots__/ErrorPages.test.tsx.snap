@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`ErrorPages component > should render correctly 1`] = `
+exports[`Error pages > should render correctly 1`] = `
 <DocumentFragment>
   <div
     class="MuiStack-root css-1va92lp-JoyStack-root"

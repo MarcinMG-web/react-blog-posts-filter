@@ -4,7 +4,7 @@ import { describe } from 'vitest';
 import PostList from '../components/PostList';
 import { render } from './test-utils';
 
-describe('PostList', () => {
+describe('PostList component', () => {
   const mockPosts = [
     { id: 1, title: 'Post 1', body: 'Body 1', userId: 1 },
     { id: 2, title: 'Post 2', body: 'Body 2', userId: 1 },

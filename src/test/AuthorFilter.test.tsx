@@ -5,7 +5,7 @@ import { describe } from 'vitest';
 import { render } from './test-utils';
 import AuthorFilter from '../components/AuthorFilter';
 
-describe('AuthorFilter', () => {
+describe('AuthorFilter component', () => {
   test('should render correctly', () => {
     const { asFragment } = render(<AuthorFilter />);
     expect(asFragment()).toMatchSnapshot();

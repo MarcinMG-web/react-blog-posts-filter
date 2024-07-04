@@ -2,7 +2,7 @@ import { screen } from '@testing-library/react';
 import ErrorPages from '../pages/ErrorPages';
 import { render } from './test-utils';
 
-describe('ErrorPages component', () => {
+describe('Error pages', () => {
   test('should render correctly', () => {
     const { asFragment } = render(<ErrorPages errorCode={400} />);
     expect(asFragment()).toMatchSnapshot();
@@ -39,17 +39,4 @@ describe('ErrorPages component', () => {
     expect(screen.getByText('Internal Server Error')).toBeInTheDocument();
     expect(screen.getByText('Sorry, something went wrong.')).toBeInTheDocument();
   });
-
-  //   it('calls redirect function when "Back" button is clicked', () => {
-  //     const mockNavigate = jest.fn();
-  //     jest.mock('react-router-dom', () => ({
-  //       useNavigate: () => mockNavigate,
-  //     }));
-
-  //     render(<ErrorPages errorCode={500} />);
-  //     const backButton = screen.getByText('Back');
-
-  //     fireEvent.click(backButton);
-  //     expect(mockUseNavigate).toHaveBeenCalledWith(-1);
-  //   });
 });
