@@ -1,0 +1,40 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AuthorFilter component > should render correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiSelect-root MuiSelect-variantOutlined MuiSelect-colorNeutral MuiSelect-sizeMd css-134u8hc-JoySelect-root"
+  >
+    <button
+      aria-controls=":r0:"
+      aria-expanded="false"
+      class="MuiSelect-button css-1hr8yhh-JoySelect-button"
+      role="combobox"
+      type="button"
+    >
+      All Authors
+    </button>
+    <span
+      class="MuiSelect-indicator css-yq7y2p-JoySelect-indicator"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiSvgIcon-sizeMd css-9ao4d-JoySvgIcon-root"
+        data-testid="UnfoldIcon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="m12 5.83 2.46 2.46c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L12.7 3.7a.9959.9959 0 0 0-1.41 0L8.12 6.88c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 5.83zm0 12.34-2.46-2.46a.9959.9959 0 0 0-1.41 0c-.39.39-.39 1.02 0 1.41l3.17 3.18c.39.39 1.02.39 1.41 0l3.17-3.17c.39-.39.39-1.02 0-1.41a.9959.9959 0 0 0-1.41 0L12 18.17z"
+        />
+      </svg>
+    </span>
+    <input
+      aria-hidden="true"
+      style="border: 0px; height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; white-space: nowrap; width: 1px;"
+      tabindex="-1"
+      value=""
+    />
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,146 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`PostList component > should render correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiStack-root css-qkdc1h-JoyStack-root"
+  >
+    <div
+      class="MuiBox-root css-0"
+    >
+      <div
+        class="MuiCard-root MuiCard-vertical MuiCard-variantOutlined MuiCard-colorNeutral MuiCard-sizeMd css-1f0d13i-JoyCard-root"
+      >
+        <h2
+          class="MuiTypography-root MuiTypography-h2 css-1squy4s-JoyTypography-root"
+          data-first-child=""
+        >
+          <span
+            class="MuiSkeleton-root MuiSkeleton-variantInline MuiSkeleton-levelInherit css-1h29701-JoySkeleton-root"
+          >
+             Post 1
+          </span>
+        </h2>
+        <p
+          class="MuiTypography-root MuiTypography-body-md css-khk740-JoyTypography-root"
+        >
+          <span
+            class="MuiSkeleton-root MuiSkeleton-variantInline MuiSkeleton-levelInherit css-1h29701-JoySkeleton-root"
+          >
+            Body 1
+          </span>
+        </p>
+        <span
+          class="MuiTypography-root MuiTypography-body-xs css-1q0q8ha-JoyTypography-root"
+          data-last-child=""
+        >
+          <span
+            class="MuiSkeleton-root MuiSkeleton-variantInline MuiSkeleton-levelInherit css-1h29701-JoySkeleton-root"
+          >
+             
+          </span>
+        </span>
+      </div>
+    </div>
+    <div
+      class="MuiBox-root css-0"
+    >
+      <div
+        class="MuiCard-root MuiCard-vertical MuiCard-variantOutlined MuiCard-colorNeutral MuiCard-sizeMd css-1f0d13i-JoyCard-root"
+      >
+        <h2
+          class="MuiTypography-root MuiTypography-h2 css-1squy4s-JoyTypography-root"
+          data-first-child=""
+        >
+          <span
+            class="MuiSkeleton-root MuiSkeleton-variantInline MuiSkeleton-levelInherit css-1h29701-JoySkeleton-root"
+          >
+             Post 2
+          </span>
+        </h2>
+        <p
+          class="MuiTypography-root MuiTypography-body-md css-khk740-JoyTypography-root"
+        >
+          <span
+            class="MuiSkeleton-root MuiSkeleton-variantInline MuiSkeleton-levelInherit css-1h29701-JoySkeleton-root"
+          >
+            Body 2
+          </span>
+        </p>
+        <span
+          class="MuiTypography-root MuiTypography-body-xs css-1q0q8ha-JoyTypography-root"
+          data-last-child=""
+        >
+          <span
+            class="MuiSkeleton-root MuiSkeleton-variantInline MuiSkeleton-levelInherit css-1h29701-JoySkeleton-root"
+          >
+             
+          </span>
+        </span>
+      </div>
+    </div>
+    <div
+      class="MuiBox-root css-0"
+    >
+      <div
+        class="MuiCard-root MuiCard-vertical MuiCard-variantOutlined MuiCard-colorNeutral MuiCard-sizeMd css-1f0d13i-JoyCard-root"
+      >
+        <h2
+          class="MuiTypography-root MuiTypography-h2 css-1squy4s-JoyTypography-root"
+          data-first-child=""
+        >
+          <span
+            class="MuiSkeleton-root MuiSkeleton-variantInline MuiSkeleton-levelInherit css-1h29701-JoySkeleton-root"
+          >
+             Post 3
+          </span>
+        </h2>
+        <p
+          class="MuiTypography-root MuiTypography-body-md css-khk740-JoyTypography-root"
+        >
+          <span
+            class="MuiSkeleton-root MuiSkeleton-variantInline MuiSkeleton-levelInherit css-1h29701-JoySkeleton-root"
+          >
+            Body 3
+          </span>
+        </p>
+        <span
+          class="MuiTypography-root MuiTypography-body-xs css-1q0q8ha-JoyTypography-root"
+          data-last-child=""
+        >
+          <span
+            class="MuiSkeleton-root MuiSkeleton-variantInline MuiSkeleton-levelInherit css-1h29701-JoySkeleton-root"
+          >
+             
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    class="MuiBox-root css-mfm10a"
+  >
+    <span
+      class="MuiSkeleton-root MuiSkeleton-variantRectangular MuiSkeleton-levelInherit css-por1pp-JoySkeleton-root"
+    >
+      <button
+        class="MuiButton-root Mui-disabled MuiButton-variantSolid MuiButton-colorPrimary MuiButton-sizeMd css-1uzgewf-JoyButton-root"
+        disabled=""
+        type="button"
+      >
+        Previous
+      </button>
+    </span>
+    <span
+      class="MuiSkeleton-root MuiSkeleton-variantRectangular MuiSkeleton-levelInherit css-por1pp-JoySkeleton-root"
+    >
+      <button
+        class="MuiButton-root MuiButton-variantSolid MuiButton-colorPrimary MuiButton-sizeMd css-1uzgewf-JoyButton-root"
+        type="button"
+      >
+        Next
+      </button>
+    </span>
+  </div>
+</DocumentFragment>
+`;
